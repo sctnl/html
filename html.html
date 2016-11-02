@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="refresh" content="120;url=html.html">
+	<title>html</title>
+	<style>
+		body,h1{margin:0;padding:0;}
+		body{padding:20px;}
+		h1{margin:20px 0;background:#ccc;}
+	</style>
+</head>
+<body>
+	<a href="#col">锚点：个别直列化</a>
+	<a href="#blockquote">锚点：引用文本</a>
+	<h1>标记</h1>
+	<hr width="80%" size="10px" noshade>
+	<br/>
+	<h1>字符控制标记</h1>
+	<b>粗</b>&emsp;/             <i>斜</i>&emsp;/          <s>删</s>&emsp;/              <u>下划</u>&emsp;/ 
+	<tt>电报</tt> &emsp;/        下标X<sub>2</sub> &emsp;/   上标X<sup>2</sup>&emsp;/    <address>地址：福建厦门</address>&emsp;/ 
+	<big>大字</big>&emsp;/       <del>删除</del>&emsp;/    <ins>修改</ins>&emsp;/        <small>小字</small>&emsp;/
+	<strong>加强语气(加粗)</strong> &emsp;/                <em>加强语气(倾斜)</em>
+	<h1>格式化</h1>
+	<pre>
+		style
+			*{margin:0;padding:0;}
+			body{padding:20px;}
+			h1{margin:20px 0;background:#ccc;}
+		style
+	</pre>
+	<h1><a href="javascript:;" id="blockquote"></a>引用文本</h1>
+	<p>
+		在与同类组件的比较中，layer总是能轻易获胜。她尽可能地在以更少的代码展现更强健的功能，且格外注重性能的提升、易用和实用性，正因如此，越来越多的开发者将媚眼投上了layer（已被3389394人次关注）。
+	</p>
+	<blockquote cite="www.baidu.com">layer兼容了包括IE6在内的所有主流浏览器。</blockquote>
+	<p>
+		她数量可观的接口，使得您可以自定义太多您需要的风格，每一种弹层模式各具特色，广受欢迎。当然，这种“王婆卖瓜”的陈述听起来总是有点难受，因此你需要进一步了解她是否真的如你所愿。
+	</p>
+	<h1>table标签下的属性</h1>
+	<table border="1" cellspacing="3" cellpadding="3" width="600" height="150" align="center" bgcolor="#f2f2f2" summary="这是一个表格" bordercolor="#f90">
+		<colgroup span="1" bgcolor="#f90"></colgroup>
+		<thead>
+			<tr><th>服务主题</th><th>提交时间</th><th>提交人</th><th>状态</th><th>操作</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>位置</td><td>2015-16-12</td><td>张三</td><td>完成</td><td>编辑</td></tr>
+			<tr><td>方向</td><td>2015-16-12</td><td>张三</td><td>完成</td><td>编辑</td></tr>
+			<tr><td>定位</td><td>2015-16-12</td><td>张三</td><td>完成</td><td>编辑</td></tr>
+		</tbody>
+		<tfoot>
+			<tr><td>总结</td></tr>
+		</tfoot>
+	</table>
+	<h1>标签下的边框设置（该属性必须在 border的属性值不为0 的状态下!）</h1>
+	<table border="1" cellspacing="0" cellpadding="3" width="600" height="150" frame="border" rules="all">
+		<thead>
+			<tr align="right"><th width="200" nowrap>服务主题服务主题服务主题服务主题</th><th bgcolor="#f90">提交时间</th><th height="40">提交人</th><th>状态</th><th>操作</th></tr>
+		</thead>
+		<tbody>
+			<tr bgcolor="#f90"><td>位置</td><td width="100" align="right">2015-16-12</td><td>张三</td><td>完成</td><td>编辑</td></tr>
+			<tr><td>方向</td><td>2015-16-12</td><td>张三</td><td height="40">完成</td><td rowspan="2">编辑</td></tr>
+			<tr><td bgcolor="#f90">定位</td><td>2015-16-12</td><td>张三</td><td>完成</td></tr>
+		</tbody>
+		<tfoot>
+			<tr><td colspan="5" align="center">总结</td></tr>
+		</tfoot>
+	</table>
+	<h1><a href="javascript:;" name="col"></a>个别直列化</h1>
+	<table border="1" cellspacing="0" cellpadding="3" width="600" height="150">
+		<caption>表格</caption>
+		<col span="2" bgcolor="#f90"></col>
+		<col bgcolor="#f22"></col>
+		<tr><td>位置</td><td>2015-16-12</td><td>张三</td><td>完成</td><td>编辑</td></tr>
+		<tr><th>服务主题</th><th>提交时间</th><th>提交人</th><th>状态</th><th>操作</th></tr>
+		<tr><td>方向</td><td>2015-16-12</td><td>张三</td><td>完成</td><td>编辑</td></tr>
+		<tr><td>总结</td></tr>
+		<tr><td>定位</td><td>2015-16-12</td><td>张三</td><td>完成</td><td>编辑</td></tr>
+	</table>
+	<h1>文本栏\密码栏</h1>
+	文本栏:<input type="text" name="栏位名称" value="栏位内定值" size="50" maxlength="4"><br/>
+	密码栏:<input type=”password” name="栏位名称" value="栏位内定值" size="50" maxlength="4" readonly>
+	<h1>复选栏、单选栏</h1>	
+	多重勾选栏位 ：<input type="checkbox" name="栏位名称" value="内定值" checked>
+	单选栏位 :<input type="radio" name="栏位名称" value="内定值" checked disabled>
+	<h1>窗体栏位、区块栏位</h1>		
+	窗体选项栏位设置:
+	<select name="栏位名称" size="5" multiple>
+	　　<option value="选项值" selected>22222</option>
+	　　<option vvalue="选项值">31111111</option>
+	　　<option value="选项值">42222222</option>
+		<option vvalue="选项值">3222222222</option>
+	　　<option value="选项值">42222222</option>
+		<option vvalue="选项值">322222</option>
+	　　<option value="选项值">4222222</option>
+	</select>
+	<select name="栏位名称">
+		<optgroup label="分组名称1">
+			<option vvalue="选项值">322222</option>
+	　　	<option value="选项值">4222222</option>
+		</optgroup>		
+		<optgroup label="分组名称">
+			<option vvalue="选项值">322222</option>
+	　　	<option value="选项值" selected>4222222</option>
+		</optgroup>
+	</select>
+	<br/>
+	文字区块的设置:
+	<textarea cols="60" rows="2" placeholder="内定值" disabled></textarea> 
+	<textarea cols="60" rows="2" placeholder="内定值" autofocus form="form_id"></textarea> 
+	<br/>
+	表单：
+	<form action="demo_form.asp" id="form_id">
+		<fieldset>
+			<legend>标题</legend>
+			 Name: <input type="text" name="usrname">
+			 <input type="submit">
+		 </fieldset>
+		 Name: <input type="text" name="usrname">
+	</form>
+	<h1>活动文字</h1>
+	<marquee behavior="alternate" scrollamount="1">活动文字</marquee>
+	<marquee direction="up" hspace="10" vspace="10">活动文字</marquee>
+</body>
+</html>
